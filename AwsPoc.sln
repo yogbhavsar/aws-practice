@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwsPoc.Console", "AwsPoc.Console\AwsPoc.Console.csproj", "{4B894C63-5F90-4C0C-A15E-0C32A095FA13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwsPoc.Common", "AwsPoc.Common\AwsPoc.Common.csproj", "{2FD62AE4-CB2E-412C-A6F7-02B6C3BED705}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwsPoc.S3", "AwsPoc.S3\AwsPoc.S3.csproj", "{A3F0BDCF-4770-4FC1-B418-033B28A54823}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B894C63-5F90-4C0C-A15E-0C32A095FA13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B894C63-5F90-4C0C-A15E-0C32A095FA13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B894C63-5F90-4C0C-A15E-0C32A095FA13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B894C63-5F90-4C0C-A15E-0C32A095FA13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FD62AE4-CB2E-412C-A6F7-02B6C3BED705}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FD62AE4-CB2E-412C-A6F7-02B6C3BED705}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FD62AE4-CB2E-412C-A6F7-02B6C3BED705}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FD62AE4-CB2E-412C-A6F7-02B6C3BED705}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3F0BDCF-4770-4FC1-B418-033B28A54823}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3F0BDCF-4770-4FC1-B418-033B28A54823}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3F0BDCF-4770-4FC1-B418-033B28A54823}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3F0BDCF-4770-4FC1-B418-033B28A54823}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

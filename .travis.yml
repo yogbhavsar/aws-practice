@@ -1,0 +1,7 @@
+language: csharp
+solution: AwsPoc.sln
+mono: none
+dotnet: 3.1.4
+script:
+ - dotnet restore
+ - dotnet build /p:Configuration=Release AwsPoc.sln
