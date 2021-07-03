@@ -1,7 +1,10 @@
 # aws-practice
+
+[![Build Status](https://travis-ci.com/yogbhavsar/aws-practice.svg?branch=main)](https://travis-ci.com/github/yogbhavsar/aws-practice)
+
 A console application.
 
-Contains the practice/poc solutions around aws services. It was developed with [localstack](https://github.com/localstack/localstack).
+Contains the practice/poc solutions around aws services. It is developed with [localstack](https://github.com/localstack/localstack).
 
 ## Pre-requisites
 1. AWS CLI V2 should be installed. (Installation with Python pip is also fine.)
