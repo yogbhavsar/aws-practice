@@ -8,7 +8,8 @@ Contains the practice/poc solutions around aws services. It is developed with [l
 
 ## Pre-requisites
 1. AWS CLI V2 should be installed. (Installation with Python pip is also fine.)
-2. AWS profile should be configured so that it can be used with the solution.
+2. AWS profile should be configured so that it can be used with the solution. Configuration with `localstack` i.e. without an actual account on AWS is also fine.
+3. .NET 5 should be installed.
 
 ## Steps to run the solution
 1. Build the solution.
