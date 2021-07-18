@@ -1,0 +1,43 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: "Sample SAM Template for AwsPoc.DynamoDbLambda"
+
+# More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
+Globals:
+  Function:
+    Timeout: 10
+
+Resources:
+  DynamoChangesLogger:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: ./src/DynamoChangesLogger/
+      Handler: DynamoChangesLogger::DynamoChangesLogger.Function::FunctionHandler
+      Runtime: dotnetcore3.1
+      MemorySize: 128
+
+      Events:
+        Stream:
+          Type: DynamoDB
+          Properties:
+            Stream: !GetAtt StudentsTable.StreamArn
+            BatchSize: 100
+            StartingPosition: LATEST
+  StudentsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      AttributeDefinitions:
+        - AttributeName: standard
+          AttributeType: S
+        - AttributeName: roll
+          AttributeType: S
+      KeySchema:
+        - AttributeName: standard
+          KeyType: HASH
+        - AttributeName: roll
+          KeyType: RANGE
+      ProvisionedThroughput:
+        ReadCapacityUnits: 5
+        WriteCapacityUnits: 5
+      StreamSpecification:
+        StreamViewType: NEW_IMAGE

@@ -1,10 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# 
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwsPoc.Console", "AwsPoc.Console\AwsPoc.Console.csproj", "{4B894C63-5F90-4C0C-A15E-0C32A095FA13}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwsPoc.Common", "AwsPoc.Common\AwsPoc.Common.csproj", "{2FD62AE4-CB2E-412C-A6F7-02B6C3BED705}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwsPoc.S3", "AwsPoc.S3\AwsPoc.S3.csproj", "{A3F0BDCF-4770-4FC1-B418-033B28A54823}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DynamoChangesLogger", "DynamoChangesLogger", "{AD88DFAD-C5BB-4CE0-B66B-71561D3039E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A0D6F967-FE09-49D9-A8AC-E73877FAEB1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamoChangesLogger", "DynamoChangesLogger\src\DynamoChangesLogger\DynamoChangesLogger.csproj", "{00260C2F-8F75-479A-AE06-762EE46E1A62}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +31,17 @@ Global
 		{A3F0BDCF-4770-4FC1-B418-033B28A54823}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3F0BDCF-4770-4FC1-B418-033B28A54823}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3F0BDCF-4770-4FC1-B418-033B28A54823}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26AC9BFC-13B7-4FC1-9290-CD132008CBB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26AC9BFC-13B7-4FC1-9290-CD132008CBB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26AC9BFC-13B7-4FC1-9290-CD132008CBB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26AC9BFC-13B7-4FC1-9290-CD132008CBB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00260C2F-8F75-479A-AE06-762EE46E1A62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00260C2F-8F75-479A-AE06-762EE46E1A62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00260C2F-8F75-479A-AE06-762EE46E1A62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00260C2F-8F75-479A-AE06-762EE46E1A62}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A0D6F967-FE09-49D9-A8AC-E73877FAEB1B} = {AD88DFAD-C5BB-4CE0-B66B-71561D3039E5}
+		{00260C2F-8F75-479A-AE06-762EE46E1A62} = {A0D6F967-FE09-49D9-A8AC-E73877FAEB1B}
 	EndGlobalSection
 EndGlobal

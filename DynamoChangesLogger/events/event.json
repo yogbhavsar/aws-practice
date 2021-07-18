@@ -1,0 +1,36 @@
+{
+    "Records": [
+        {
+            "eventID": "1",
+            "eventName": "INSERT",
+            "eventVersion": "1.0",
+            "eventSource": "aws:dynamodb",
+            "awsRegion": "ap-south-1",
+            "dynamodb": {
+                "Keys": {
+                    "standard": {
+                        "S": "1"
+                    },
+                    "roll": {
+                        "S": "1"
+                    }
+                },
+                "NewImage": {
+                    "standard": {
+                        "S": "1"
+                    },
+                    "roll": {
+                        "S": "1"
+                    },
+                    "name": {
+                        "S": "Suresh"
+                    }
+                },
+                "SequenceNumber": "111",
+                "SizeBytes": 26,
+                "StreamViewType": "NEW_IMAGE"
+            },
+            "eventSourceARN": "arn:aws:dynamodb:****:********:table/students/stream/2021-06-17T09:13:04.455"
+        }
+    ]
+}
