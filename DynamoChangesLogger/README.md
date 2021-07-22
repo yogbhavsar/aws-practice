@@ -3,7 +3,7 @@
 This project contains sample source code and supporting files for a Dynamo DB Stream triggered serverless application that you can deploy with the SAM CLI. It includes the following files and folders.
 
 - src - Code for the application's Lambda function.
-- events - Invocation events that you can use to invoke the function. Currently it doesn't work with sam local invoke. Refer to [this](https://github.com/aws/serverless-application-model/issues/2096) issue for details.
+- events - Invocation events that you can use to invoke the function.
 - template.yaml - A template that defines the application's AWS resources.
 
 This application's deployment package type is Zip and runtime is .NET core 3.1. The application uses several AWS resources, including Lambda functions, Dynamo DB events, Cloudwatch logs, CloudFormation stacks. Some of these resources are defined in the `template.yaml` file in this project. You can update the template to add AWS resources through the same deployment process that updates your application code.
