@@ -13,6 +13,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A0D6F967-FE0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamoChangesLogger", "DynamoChangesLogger\src\DynamoChangesLogger\DynamoChangesLogger.csproj", "{00260C2F-8F75-479A-AE06-762EE46E1A62}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logger", "Logger", "{9E854860-2020-11EC-80DB-3FBCEF168351}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwsPoc.LogsProducer", "LogsProducer\AwsPoc.LogsProducer.csproj", "{0A622BC1-2522-4C81-8D6D-BE6CAE3C3007}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,8 +43,13 @@ Global
 		{00260C2F-8F75-479A-AE06-762EE46E1A62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00260C2F-8F75-479A-AE06-762EE46E1A62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00260C2F-8F75-479A-AE06-762EE46E1A62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A622BC1-2522-4C81-8D6D-BE6CAE3C3007}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A622BC1-2522-4C81-8D6D-BE6CAE3C3007}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A622BC1-2522-4C81-8D6D-BE6CAE3C3007}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A622BC1-2522-4C81-8D6D-BE6CAE3C3007}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{0A622BC1-2522-4C81-8D6D-BE6CAE3C3007} = {9E854860-2020-11EC-80DB-3FBCEF168351}
 		{A0D6F967-FE09-49D9-A8AC-E73877FAEB1B} = {AD88DFAD-C5BB-4CE0-B66B-71561D3039E5}
 		{00260C2F-8F75-479A-AE06-762EE46E1A62} = {A0D6F967-FE09-49D9-A8AC-E73877FAEB1B}
 	EndGlobalSection

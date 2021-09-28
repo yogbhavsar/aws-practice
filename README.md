@@ -22,6 +22,7 @@ Contains the practice/poc solutions around aws services. It is developed with [l
 ## AWS Services covered till now
 1. S3
 2. [Lambda with DynamoDB streams](DynamoChangesLogger/README.md)
+3. [Logs on Amazon OpenSearch service (Previously ElasticSearch)](LogsProducer/README.md)
 
 ## Troubleshooting
 Please refer [this](Troubleshooting.md) document.
