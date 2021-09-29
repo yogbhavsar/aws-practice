@@ -4,7 +4,10 @@
 The concept is to push the logs to the firehose service and then have them stored in the `Amazon ElasticSearch` (Now `OpenSearch`) service, so that they can be further used for visualizations like Kibana and Grafana. The [diagram](resources/LogsProducer-Architecture.pdf) represents the intended architecture.
 
 ## Details
-From the architecture, this repo contains the `LogsProducer` component only. The rest of the components are purely AWS resources that need the configuration only, hence they are not added in this repo. Unlike the other components like S3, this is a separate console application instead of a program in the main console app. This is because the app could have been run on an AWS instance also. Current testing is done by running on the local machine only.
+From the architecture, this repo contains the `LogsProducer` component only. The rest of the components are purely AWS resources that need the configuration only, hence they are not added in this repo. Unlike the other components like S3, this is a separate console application instead of a program in the main console app. This is because the app could have been run on an AWS instance also. Current testing is done by running on the local machine only.  
+### Points to remember
+1. While configuring the ES domain, I specified the JSON resource policy that allows all actions on the ES domain for all the AWS services. `Principal: { "AWS": [ "*" ]}`
+2. This tutorial doesn't have up to date steps for configuring the `OpenSearch` dashboards. Additional efforts will be needed there.
 
 ## Steps to run
 After building the application, when you run it using the command line, add a command line parameter that indicates the number of logs you want to generate. e.g.   
